@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="shortcut icon" href="/src/assets/favicon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav" role="navigation" aria-label="Main Navigation"></nav>
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="index.html" class="link header__nav-link">Home</a></li>
+                <li class="header__nav-item"><a href="contact.html" class="link header__nav-link">Contact</a></li>
+                <li class="header__nav-item"><a href="about.html" class="link header__nav-link">About Us</a></li>
+                <li class="header__nav-item"><a href="projects.html" class="link header__nav-link">Projects</a></li>
+                <div role="switch" aria-checked="false" tabindex="0">
+                    <span class="label">Darkmode</span>
+                    <span class="switch">
+                      <span></span>
+                    </span>
+                    <span class="on" aria-hidden="true">On</span>
+                    <span class="off" aria-hidden="true">Off</span>
+                  </div>
+                          
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="projects">
+            <div id="project-dialog" class="dialog" role="dialog" aria-labelledby="dialog-title" aria-hidden="true">
+                <div class="dialog__content">
+                    <p class="dialog__description">Projecten kunnen bij komen of verwijdert worden</p>
+                    <button class="dialog__close-button" aria-label="Sluit dialoog">Sluiten</button>
+                </div>
+            </div>
+            <h1 class="projects__title">My Projects</h1>
+            <div class="projects__filter">
+                <button class="projects__filter-button" data-filter="all">Alle</button>
+                <button class="projects__filter-button" data-filter="web">Web</button>
+                <button class="projects__filter-button" data-filter="pgm">Pgm</button>
+                <button class="projects__filter-button" data-filter="atwork">At-work</button>
+            </div>
+            <div class="projects__list">
+                <article class="projects__item" data-category="pgm">
+                    <a href="src/detail-pages/games-con.html" class="link projects__link">
+                        <picture class="projects__image">
+                            <source srcset="src/assets/media/webp/ff-xiv.webp" type="image/webp">
+                            <source srcset="src/assets/media/ff-xiv.png" type="image/jpeg">
+                            <img src="src/assets/media/webp/ff-xiv.webp" alt="Games con" class="projects__img">
+                        </picture>
+                        <h2 class="projects__name">Games con</h2>
+                        <p class="projects__tech">HTML, CSS, JS</p>
+                    </a>
+                </article>
+                <article class="projects__item" data-category="web">
+                    <a href="src/detail-pages/digital-agency.html" class="link projects__link">
+                        <picture class="projects__image">
+                            <source srcset="src/assets/media/webp/plane.webp" type="image/webp">
+                            <source srcset="src/assets/media/plane.jpg" type="image/jpeg">
+                            <img src="src/assets/media/webp/plane.webp" alt="Digital Agency" class="projects__img">
+                        </picture>
+                        <h2 class="projects__name">Digital Agency</h2>
+                        <p class="projects__tech">HTML, CSS</p>
+                    </a>
+                </article>
+                <article class="projects__item" data-category="web">
+                    <a href="src/detail-pages/no-planet-b.html" class="link projects__link">
+                        <picture class="projects__image">
+                            <source srcset="src/assets/media/webp/climate-change.webp" type="image/webp">
+                            <source srcset="src/assets/media/climate-change.svg" type="image/svg+xml">
+                            <img src="src/assets/media/webp/climate-change.webp" alt="No-planet-b" class="projects__img">
+                        </picture>
+                        <h2 class="projects__name">No-planet-b</h2>
+                        <p class="projects__tech">HTML, CSS</p>
+                    </a>
+                </article>
+                <article class="projects__item" data-category="atwork">
+                    <a href="src/detail-pages/stam.html" class="link projects__link">
+                        <picture class="projects__image">
+                            <source srcset="src/assets/media/webp/abdij.webp" type="image/webp">
+                            <source srcset="src/assets/media/abdij.png" type="image/jpeg">
+                            <img src="src/assets/media/webp/abdij.webp" alt="STAM" class="projects__img">
+                        </picture>
+                        <h2 class="projects__name">STAM</h2>
+                        <p class="projects__tech">HTML, CSS, JS</p>
+                    </a>
+                </article>
+                <article class="projects__item" data-category="atwork">
+                    <a href="src/detail-pages/best-of-2024.html" class="link projects__link">
+                        <picture class="projects__image">
+                            <source srcset="src/assets/media/webp/anno-1800.webp" type="image/webp">
+                            <source srcset="src/assets/media/anno-1800.jpg" type="image/jpeg">
+                            <img src="src/assets/media/webp/anno-1800.webp" alt="Best of 2024" class="projects__img">
+                        </picture>
+                        <h2 class="projects__name">Best of 2024</h2>
+                        <p class="projects__tech">HTML, CSS, JS</p>
+                    </a>
+                </article>
+                <article class="projects__item" data-category="web">
+                    <a href="src/detail-pages/funky-portfolio.html" class="link projects__link">
+                        <picture class="projects__image">
+                            <source srcset="src/assets/media/webp/gettyimages-200191338-001-612x612.webp" type="image/webp">
+                            <source srcset="src/assets/media/gettyimages-200191338-001-612x612.jpg" type="image/jpeg">
+                            <img src="src/assets/media/webp/gettyimages-200191338-001-612x612.webp" alt="Funky portfolio" class="projects__img">
+                        </picture>
+                        <h2 class="projects__name">Funky portfolio</h2>
+                        <p class="projects__tech">HTML, CSS</p>
+                    </a>
+                </article>
+                <article class="projects__item" data-category="pgm">
+                    <a href="src/detail-pages/recepies.html" class="link projects__link">
+                        <picture class="projects__image">
+                            <source srcset="src/assets/media/webp/download-1.webp" type="image/webp">
+                            <source srcset="src/assets/media/download-1.jpg" type="image/jpeg">
+                            <img src="src/assets/media/webp/download-1.webp" alt="Recepies" class="projects__img">
+                        </picture>
+                        <h2 class="projects__name">Recepies</h2>
+                        <p class="projects__tech">HTML, CSS, JS</p>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <p class="footer__text">&copy; Arteveldehogeschool - Arne De Rese</p>
+    </footer>
+
+    <script src="build/app.js"></script>
+</body>
+</html>

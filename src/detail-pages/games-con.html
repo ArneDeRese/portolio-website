@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Con</title>
+    <link rel="stylesheet" href="../../src/styles/main.css">
+    <link rel="shortcut icon" href="/src/assets/favicon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__nav-list" role="navigation" aria-label="Main Navigation">
+                <li class="header__nav-item"><a href="../../index.html" class="link header__nav-link">Home</a></li>
+                <li class="header__nav-item"><a href="../../contact.html" class="link header__nav-link">Contact</a></li>
+                <li class="header__nav-item"><a href="../../about.html" class="link header__nav-link">About Us</a></li>
+                <li class="header__nav-item"><a href="../../projects.html" class="link header__nav-link">Projects</a></li>
+                <div role="switch" aria-checked="false" tabindex="0">
+                    <span class="label">Darkmode</span>
+                    <span class="switch">
+                      <span></span>
+                    </span>
+                    <span class="on" aria-hidden="true">On</span>
+                    <span class="off" aria-hidden="true">Off</span>
+                  </div>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <section class="project-detail">
+            <h1 class="project-detail__title">Games Con</h1>
+            <picture class="project-detail__image">
+                <source srcset="../../src/assets/media/webp/ff-xiv.webp" type="image/webp">
+                <source srcset="../../src/assets/media/ff-xiv.png" type="image/jpeg">
+                <img src="../../src/assets/media/webp/ff-xiv.webp" alt="Games Con" class="project-detail__img">
+            </picture>
+            <h2 class="project-detail__subtitle">About the Project</h2>
+            <p class="project-detail__description">
+                Games Con is mijn eindwerk voor het vak programmeren-1. Het is gemaakt met JavaScript, CSS en HTML. Bij dit project is alle content ingeladen met JavaScript.
+            </p>
+            <a href="../../projects.html" class="link project-detail__back-link">Back to Projects</a>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo" aria-label="Footer">
+        <p class="footer__text">&copy; Arteveldehogeschool - Arne De Rese</p>
+    </footer>
+
+    <script src="../../build/app.js"></script>
+</body>
+</html>

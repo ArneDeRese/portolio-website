@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="shortcut icon" href="/src/assets/favicon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav" role="navigation" aria-label="Main Navigation"></nav>
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="index.html" class="link header__nav-link">Home</a></li>
+                <li class="header__nav-item"><a href="contact.html" class="link header__nav-link">Contact</a></li>
+                <li class="header__nav-item"><a href="about.html" class="link header__nav-link">About Us</a></li>
+                <li class="header__nav-item"><a href="projects.html" class="link header__nav-link">Projects</a></li>
+                <div role="switch" aria-checked="false" tabindex="0">
+                    <span class="label">Darkmode</span>
+                    <span class="switch">
+                      <span></span>
+                    </span>
+                    <span class="on" aria-hidden="true">On</span>
+                    <span class="off" aria-hidden="true">Off</span>
+                  </div>
+                          
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Arne De Rese</h1>
+                <h2 class="hero__subtitle">1ste jaar student graduaat programmeren Arteveldehogeschool</h2>
+            </div>
+            <div class="hero__image-container">
+                <picture>
+                    <source srcset="src/assets/media/webp/arne.webp" type="image/webp">
+                    <source srcset="src/assets/media/jpg/arne.jpg" type="image/jpeg">
+                    <img src="src/assets/media/webp/arne.webp" alt="Arne De Rese">
+                </picture>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+        <p class="footer__text">&copy; Arteveldehogeschool - Arne De Rese</p>
+    </footer>
+
+    <script src="build/app.js"></script>
+</body>
+</html>

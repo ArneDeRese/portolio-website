@@ -1,0 +1,8 @@
+.footer {
+    padding-top: var(--text-lg);
+}
+
+.footer__text {
+    font-size: var(--text-sm);
+    text-align: center;
+}

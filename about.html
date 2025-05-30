@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="shortcut icon" href="/src/assets/favicon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav" role="navigation" aria-label="Main Navigation"></nav>
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="index.html" class="link header__nav-link">Home</a></li>
+                <li class="header__nav-item"><a href="contact.html" class="link header__nav-link">Contact</a></li>
+                <li class="header__nav-item"><a href="about.html" class="link header__nav-link">About Us</a></li>
+                <li class="header__nav-item"><a href="projects.html" class="link header__nav-link">Projects</a></li>
+                <div role="switch" aria-checked="false" tabindex="0">
+                    <span class="label">Darkmode</span>
+                    <span class="switch">
+                      <span></span>
+                    </span>
+                    <span class="on" aria-hidden="true">On</span>
+                    <span class="off" aria-hidden="true">Off</span>
+                  </div>
+                          
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="about">
+            <h1 class="about__title">Over mij</h1>
+
+            <div id="about__content" class="about__content">
+                <p class="about__text">Tijdens mijn opleiding in het graduaat programmeren heb ik geleerd om webpagina's te bouwen met behulp van drie belangrijke technologieën: HTML, CSS en JavaScript. Deze talen zijn de fundamenten van web ontwikkeling en stellen me in staat om interactieve en visueel aantrekkelijke websites te maken.</p>
+                <p class="about__text">Ik begon mijn reis met HTML (HyperText Markup Language), de opmaaktaal die de structuur van een webpagina bepaalt. Door HTML-tags te gebruiken, leer ik hoe ik inhoud kan organiseren, zoals tekst, afbeeldingen en formulieren. Het begrijpen van HTML is essentieel voor het creëren van een duidelijke en goed georganiseerde webpagina.</p>
+                <p class="about__text">Daarna leerde ik CSS, waarmee ik de visuele uitstraling van een website kan aanpassen. Het stelt me in staat om kleuren, lay-out en lettertypen te bepalen, zodat mijn website er goed uitziet op verschillende apparaten.</p>
+                <p class="about__text">JavaScript maakt het mogelijk om mijn websites interactief te maken. Door JavaScript te gebruiken, kan ik dynamische elementen toevoegen, zoals knoppen, formulieren en animaties, die reageren op gebruikersacties. Dit zorgt ervoor dat mijn webpagina's niet alleen statisch zijn, maar echt met de gebruiker communiceren.</p>
+                <p class="about__text">Door deze drie technologieën te combineren, kan ik websites creëren die zowel functioneel als visueel aantrekkelijk zijn.</p>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2 class="skills__title">Mijn vaardigheden</h2>
+            <ul class="skills__list">
+                <li class="skills__item">
+                    <span class="skills__name">HTML</span>
+                    <picture class="skills__image">
+                        <source srcset="src/assets/media/webp/sta-je-html.webp" type="image/webp">
+                        <source srcset="src/assets/media/sta-je-html.jpg" type="image/jpeg">
+                        <img src="src/assets/media/webp/sta-je-html.webp" alt="HTML" class="skills__img">
+                    </picture>
+                </li>
+                <li class="skills__item">
+                    <span class="skills__name">CSS</span>
+                    <picture class="skills__image">
+                        <source srcset="src/assets/media/webp/sta-je-css.webp" type="image/webp">
+                        <source srcset="src/assets/media/sta-je-css.png" type="image/jpeg">
+                        <img src="src/assets/media/webp/sta-je-css.webp" alt="CSS" class="skills__img">
+                    </picture>
+                </li>
+                <li class="skills__item">
+                    <span class="skills__name">JavaScript</span>
+                    <picture class="skills__image">
+                        <source srcset="src/assets/media/webp/JavaScript-logo.webp" type="image/webp">
+                        <source srcset="src/assets/media/JavaScript-logo.png" type="image/jpeg">
+                        <img src="src/assets/media/webp/JavaScript-logo.webp" alt="JavaScript" class="skills__img">
+                    </picture>
+                </li>
+                <li class="skills__item">
+                    <span class="skills__name">PHP</span>
+                    <picture class="skills__image">
+                        <source srcset="src/assets/media/webp/new-php-logo.webp" type="image/webp">
+                        <source srcset="src/assets/media/new-php-logo.svg" type="image/svg+xml">
+                        <img src="src/assets/media/webp/new-php-logo.webp" alt="PHP" class="skills__img">
+                    </picture>
+                </li>
+                <li class="skills__item">
+                    <span class="skills__name">Craft</span>
+                    <picture class="skills__image">
+                        <source srcset="src/assets/media/webp/22369139.webp" type="image/webp">
+                        <source srcset="src/assets/media/22369139.png" type="image/jpeg">
+                        <img src="src/assets/media/webp/22369139.webp" alt="Craft" class="skills__img">
+                    </picture>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <p class="footer__text">&copy; Arteveldehogeschool - Arne De Rese</p>
+    </footer>
+    
+    <script src="build/app.js"></script>
+</body>
+</html>

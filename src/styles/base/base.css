@@ -1,0 +1,21 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-variation-settings: 'wght' 400;
+    color: var(--black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-variation-settings: 'wght' 700; 
+}
+
+li {
+    list-style-type: none;
+    padding: 0;
+}
+
+@media (min-width: 48rem) {
+    body {
+        max-width: 80%;
+        margin: auto;
+    }
+}

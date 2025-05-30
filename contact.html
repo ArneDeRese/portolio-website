@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="shortcut icon" href="/src/assets/favicon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav" role="navigation" aria-label="Main Navigation"></nav>
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="index.html" class="link header__nav-link">Home</a></li>
+                <li class="header__nav-item"><a href="contact.html" class="link header__nav-link">Contact</a></li>
+                <li class="header__nav-item"><a href="about.html" class="link header__nav-link">About Us</a></li>
+                <li class="header__nav-item"><a href="projects.html" class="link header__nav-link">Projects</a></li>
+                <div role="switch" aria-checked="false" tabindex="0">
+                    <span class="label">Darkmode</span>
+                    <span class="switch">
+                      <span></span>
+                    </span>
+                    <span class="on" aria-hidden="true">On</span>
+                    <span class="off" aria-hidden="true">Off</span>
+                  </div>
+                          
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="contact">
+            <h1 class="contact__title">Contact Info</h1>
+            <picture class="contact__image">
+                <source srcset="src/assets/media/webp/contact-us.webp" type="image/webp">
+                <source srcset="src/assets/media/contact-us.jpg" type="image/jpeg">
+                <img src="src/assets/media/webp/contact-us.webp" alt="Contact Us" class="contact__img">
+            </picture>
+
+            <article class="contact__details">
+                <section class="contact__info">
+                    <h2 class="contact__info-title">Contact Details</h2>
+                    <button popovertarget="contact__info-list" class="contact__info-btn">Toon me</button>
+                    <ul popover id="contact__info-list" class="contact__info-list">
+                        <li class="contact__info-item">
+                            <strong>Phone:</strong> <a href="tel:+1234567890" class="link contact__info-link">+123 456 7890</a>
+                        </li>
+                        <li class="contact__info-item">
+                            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arne-de-rese-2a13b9358/" target="_blank" rel="noopener" class="link contact__info-link">Mijn linkedin</a>
+                        </li>
+                        <li class="contact__info-item">
+                            <strong>GitHub:</strong> <a href="https://github.com/ArneDeRese" target="_blank" rel="noopener" class="link contact__info-link">Mijn github</a>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+        <p class="footer__text">&copy; Arteveldehogeschool - Arne De Rese</p>
+    </footer>
+
+    <script src="build/app.js"></script>
+</body>
+</html>

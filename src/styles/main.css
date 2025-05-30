@@ -1,0 +1,17 @@
+@import url(./base/reset.css);
+@import url(./base/base.css);
+@import url(./layouts/nav.css);
+@import url(./base/root.css);
+@import url(./layouts/footer.css);
+@import url(./components/form.css);
+@import url(./layouts/projects-detail.css);
+@import url(./components/projects.css);
+@import url(./components/hero.css);
+@import url(./components/skill.css);
+@import url(./components/about.css);
+@import url(./components/contact.css);
+@import url(./layouts/link.css);
+@import url(./layouts/filter-button.css);
+@import url(./layouts/switch.css);
+@import url(./theme/darkmode.css);
+@import url(./components/dialoog.css);
